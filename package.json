@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/margaritawang/margaritawang.github.io#readme",
   "dependencies": {
+    "jquery": "^3.3.1",
     "semantic-ui": "^2.2.14"
   }
 }
