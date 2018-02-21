@@ -14,7 +14,8 @@ body {
 
 .content-section {
     padding-top: 7.5rem;
-    padding-bottom: 7.5rem
+    padding-bottom: 7.5rem;
+    display: flex
 }
 
 .content-section-heading h2 {
@@ -384,4 +385,14 @@ a:hover {
 
 .icon {
   max-height: 4rem
+}
+
+.avatar {
+  padding-left: 5rem
+}
+
+.avatar img{
+  max-height: 400px;
+  border-radius: 15px;
+  box-shadow: 10px 10px #808080, 20px 20px
 }
