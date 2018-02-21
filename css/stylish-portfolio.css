@@ -214,7 +214,7 @@ h6 {
     width: 7rem;
     display: block;
     line-height: 7.5rem;
-    font-size: 2.25rem;
+    font-size: 4rem;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1)
 }
 
@@ -383,9 +383,5 @@ a:hover {
 }
 
 .icon {
-  max-height: 40px
-}
-
-.devicon {
-  height: 60px
+  max-height: 4rem
 }
