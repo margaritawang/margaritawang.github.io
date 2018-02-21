@@ -101,6 +101,11 @@ h6 {
     color: #fff
 }
 
+.masthead h2 {
+    font-size: 3rem;
+    color: #fff
+}
+
 .masthead h3 {
   color: #fff
 }
@@ -394,5 +399,5 @@ a:hover {
 .avatar img{
   max-height: 400px;
   border-radius: 15px;
-  box-shadow: 10px 10px #808080, 20px 20px
+  box-shadow: 10px 10px #9eafb9, 20px 20px #637682
 }
