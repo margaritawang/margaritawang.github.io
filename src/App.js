@@ -1,26 +1,46 @@
-import React from 'react';
+import React, { Component } from 'react';
+import {get} from 'axios';
+import _ from 'lodash';
 import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
+import About from './Components/About';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      resumeData: {}
+    };
+  }
+
+  componentDidMount() {
+    get('/resumeData.json')
+        .then((res) => {
+            console.log(res);
+          this.setState({
+            resumeData: res.data
+          })
+        })
+        .catch((error) => {
+          console.log(error);
+          alert(error);
+        })
+  }
+
+    render () {
+        const { resumeData } = this.state;
+        const {main, resume, portfolio} = this.state.resumeData;
+        if (!_.isEmpty(resumeData)) {
+            return (
+                <div className="App">
+                    <Header data={main}/>
+                    <About data={main}/>
+                </div>
+            )
+        }
+        return null;
+    }
 }
 
 export default App;
