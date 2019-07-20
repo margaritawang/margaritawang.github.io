@@ -2,7 +2,7 @@
   "main": {
     "name":"Margarita Wang",
     "occupation":"front-end focused software developer",
-    "description":" with a degree in Chemical Engineering and a minor in Commerce developing robust code for for a cutting-edge FinTech startup.",
+    "description":" with a degree in Chemical Engineering and a minor in Commerce developing robust code for for a cutting-edge FinTech startup",
     "image":"1571475410.jpg",
     "bio":"Experience in building full-stack web apps, familiar with JavaScript, Ruby, Matlab, C and SQL. I meditate by building virtual architectures, creating smoother user interface and solving new problems each day. A dedicated team player and a solution-oriented team leader. Kept awake by coffee, quality food, pep talks and ideas that fuel imagination.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
@@ -118,34 +118,22 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
+        "title":"FriendTrip",
+        "category":"A trip plannning application for group travellers to schedule and coordinate together in real time",
+        "image":"friendtrip.png",
         "url":"https://www.canadianwanderlust.com"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
+        "title":"Transit App",
+        "category":"(WIP) A front-end React app that pulls Translink API to render live bus locations on an interactable map.",
         "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
+        "url":"https://github.com/margaritawang/transit-app"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
+        "title":"WikiMap",
+        "category":"A web app that allows users to collaboratively create maps which list multiple \"points\", such as \"Best Places to Eat Around Town\" or \"Locations of Movie Scenes\"",
+        "image":"wikimap.png",
         "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
       }
     ]
   },

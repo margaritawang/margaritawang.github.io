@@ -5,11 +5,11 @@ const Header = ({data}) => {
     const networks = data ? data.social.map((network) => {
         switch (network.name) {
             case 'linkedin':
-                return <li key={network.name}><a href={network.url} target="_blank"><FaLinkedin/></a></li>
+                return <li key={network.name}><a href={network.url} target="_blank" rel="noopener noreferrer"><FaLinkedin/></a></li>
             case 'instagram':
-                return <li key={network.name}><a href={network.url} target="_blank"><FaInstagram/></a></li>
+                return <li key={network.name}><a href={network.url} target="_blank" rel="noopener noreferrer"><FaInstagram/></a></li>
             case 'github':
-                return <li key={network.name}><a href={network.url} target="_blank"><FaGithub/></a></li>
+                return <li key={network.name}><a href={network.url} target="_blank" rel="noopener noreferrer"><FaGithub/></a></li>
             default:
                 return null;
         }

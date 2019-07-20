@@ -6,6 +6,7 @@ import './App.css';
 import Header from './Components/Header';
 import About from './Components/About';
 import Resume from './Components/Resume';
+import Portfolio from './Components/Portfolio';
 
 class App extends Component {
   constructor(props) {
@@ -38,6 +39,7 @@ class App extends Component {
                     <Header data={main}/>
                     <About data={main}/>
                     <Resume data={resume}/>
+                    <Portfolio data={portfolio} />
                 </div>
             )
         }
