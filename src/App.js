@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header';
 import About from './Components/About';
+import Resume from './Components/Resume';
 
 class App extends Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class App extends Component {
         })
   }
 
-    render () {
+    render() {
         const { resumeData } = this.state;
         const {main, resume, portfolio} = this.state.resumeData;
         if (!_.isEmpty(resumeData)) {
@@ -36,6 +37,7 @@ class App extends Component {
                 <div className="App">
                     <Header data={main}/>
                     <About data={main}/>
+                    <Resume data={resume}/>
                 </div>
             )
         }

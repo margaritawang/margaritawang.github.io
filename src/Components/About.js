@@ -3,7 +3,7 @@ import Margarita from '../images/1571475410.jpg';
 import {FaDownload} from "react-icons/fa";
 
 const About = ({data}) => {
-    const {name, bio, street, address, phone, email, resumeDownload} = data;
+    const {name, bio, address, phone, email, resumeDownload} = data;
 
     return (
         <section id="about">
@@ -20,7 +20,7 @@ const About = ({data}) => {
                             <h2>Contact Details</h2>
                             <p className="address">
                                 <span>{name}</span><br />
-                                <span>{street}<br />
+                                <span>
                                     {address.city} {address.state}, {address.zip}
                    </span><br />
                                 <span>{phone}</span><br />

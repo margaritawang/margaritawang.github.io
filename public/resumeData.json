@@ -58,30 +58,30 @@
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"University of British Columbia",
+        "degree":"Bachelor of Applied Science",
+        "graduated":"May 2017",
+        "description":"B.Eng. Chemical Engineering - Commerce Minor"
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Lighthouse Labs",
+        "degree":"Web Development Diploma",
+        "graduated":"Feb 2018",
+        "description":"Web Development Immersive Bootcamp"
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Finhaven Technology",
+        "title":"Software Developer",
+        "years":"January 2019 - Present",
+        "description":"• Built the core user interface for an award-winning security exchange platform using React and Redux and developed new user-facing features\n• Mentored junior developers and onboarded team members\n• Collaborated with UX designers regarding user design and ensured the technical feasibility of UI/UX designs\n• Built and integrated REST APIs, bug fixes with the backend development team using Rust and Actix\n• Deployed applications using Kubernetes engines, created and managed Kubernetes clusters"
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"BC Children's Hospital Digital Lab",
+        "title":"Application Developer",
+        "years":"February 2018 - December 2018",
+        "description":"• Created smoother user experiences in applications using Laravel, Ionic, React and designed SQL database models\n\n• Set up unit testing with PHPUnit and Jest and React end-to-end test suites with Cypress\n\n• Implemented coding standards, best practices, and industry standard workflows including PR reviews.\n\n• Set up documentation practices and presented lunch and learns for team project management and soft skills development"
       }
     ],
     "skills":[
