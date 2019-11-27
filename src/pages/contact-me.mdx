@@ -1,0 +1,29 @@
+import { Box } from 'rebass'
+import { ThemeProvider } from 'emotion-theming'
+import theme from '../theme'
+
+
+# Contact me
+some awesome content
+
+# Hello, *world*!
+
+Below is an example of JSX embedded in Markdown. <br /> **Try and change
+the background color!**
+
+<div style={{ padding: '20px', backgroundColor: 'tomato' }}>
+  <h3>This is JSX</h3>
+</div>
+
+
+# MDX Example
+<ThemeProvider theme={theme}>
+<Box
+  color='primary'
+  bg='muted'
+  p={3}
+  my={5}
+>
+> ”This is an important quote.”
+</Box>
+</ThemeProvider>
