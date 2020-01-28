@@ -43,7 +43,7 @@ export default {
     buttons: {
       primary: {
         color: 'white',
-        bg: 'primary',
+        bg: 'secondary',
       }
     }
   }
