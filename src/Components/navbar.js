@@ -1,16 +1,16 @@
-import React from "react";
-import { Flex, Box, Link } from "rebass";
+import React from 'react';
+import { Flex, Box, Link } from 'rebass';
 
 export default () => (
   <Flex bg="primary">
     <Box p={3} width={1 / 5} color="text">
       <Link
         sx={{
-          display: "inline-block",
-          fontWeight: "bold",
+          display: 'inline-block',
+          fontWeight: 'bold',
           px: 2,
           py: 1,
-          color: "text"
+          color: 'text',
         }}
         variant="nav"
         href="#about"
@@ -21,11 +21,11 @@ export default () => (
     <Box p={3} width={1 / 5} color="text">
       <Link
         sx={{
-          display: "inline-block",
-          fontWeight: "bold",
+          display: 'inline-block',
+          fontWeight: 'bold',
           px: 2,
           py: 1,
-          color: "text"
+          color: 'text',
         }}
         variant="nav"
         href="#resume"
@@ -36,11 +36,11 @@ export default () => (
     <Box p={3} width={1 / 5} color="text">
       <Link
         sx={{
-          display: "inline-block",
-          fontWeight: "bold",
+          display: 'inline-block',
+          fontWeight: 'bold',
           px: 2,
           py: 1,
-          color: "text"
+          color: 'text',
         }}
         variant="nav"
         href="#work"
@@ -51,11 +51,11 @@ export default () => (
     <Box p={3} width={1 / 5} color="text">
       <Link
         sx={{
-          display: "inline-block",
-          fontWeight: "bold",
+          display: 'inline-block',
+          fontWeight: 'bold',
           px: 2,
           py: 1,
-          color: "text"
+          color: 'text',
         }}
         variant="nav"
         href="/contact-me"
@@ -66,11 +66,11 @@ export default () => (
     <Box p={3} width={1 / 5} color="text">
       <Link
         sx={{
-          display: "inline-block",
-          fontWeight: "bold",
+          display: 'inline-block',
+          fontWeight: 'bold',
           px: 2,
           py: 1,
-          color: "text"
+          color: 'text',
         }}
         variant="nav"
         href="/blogs"
