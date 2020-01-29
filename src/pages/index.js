@@ -6,20 +6,22 @@ import Navbar from '../Components/navbar';
 import About from '../Components/about';
 import Header from '../Components/header';
 import backgroundImage from '../images/dark-purple-blurred-water.jpg';
+import Resume from '../Components/resume';
 
 export default props => (
   <ThemeProvider theme={theme}>
-    <Flex
+    {/* <Flex
       flexDirection="column"
       sx={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         height: '100vh',
       }}
-    >
+    > */}
       <Navbar />
       <Header />
-    </Flex>
+    {/* </Flex> */}
     <About />
+    <Resume />
   </ThemeProvider>
 );

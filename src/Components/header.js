@@ -29,9 +29,9 @@ export default () => (
       <h2>Hi there,</h2>
       <h1>I'm Margarita Wang.</h1>
       <h3>
-        I'm a <span>front-end focused software engineer</span> with a degree in
-        Chemical Engineering and a minor in Commerce developing robust code for
-        for a cutting-edge Privacy Platform based in San Francisco.
+        I'm a <em>front-end focused software engineer</em> with a degree in
+        Chemical Engineering currently developing robust code for <em>TerraTrue</em>, a
+        cutting-edge Privacy Platform based in San Francisco.
       </h3>
     </Flex>
     <Box

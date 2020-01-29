@@ -32,7 +32,7 @@ export default () => (
           <br />
           <span>San Francisco, California</span>
           <br />
-          <span>4159104137</span>
+          <span>(415) 910 - 4137</span>
           <br />
           <span>margaritaawang@gmail.com</span>
         </Box>
