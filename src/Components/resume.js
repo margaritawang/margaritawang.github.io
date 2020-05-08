@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Box, Link, Image, Button } from 'rebass';
+import { Flex, Box, Text, Link, Image, Button } from 'rebass';
 const EducationSection = () => (
   <Flex flexDirection="column">
     <Box>
@@ -23,12 +23,11 @@ const EducationSection = () => (
 
 const WorkSection = () => (
   <Flex flexDirection="column">
-      <Box>
+    <Box>
       <h3>TerraTrue</h3>
       <p className="info">
         Software Engineer
-        <span>&bull;</span>{' '}
-        <em className="date">November 2019 - Present</em>{' '}
+        <span>&bull;</span> <em className="date">November 2019 - Present</em>{' '}
       </p>
       <p>San Francisco, CA</p>
       <ul>
@@ -150,9 +149,7 @@ export default () => {
       >
         <Flex justifyContent="space-between">
           <Box width={1 / 3}>
-            <h1>
-              <span>Education</span>
-            </h1>
+            <Text variant="subHeading">Education</Text>
           </Box>
           <Box width={2 / 3}>
             <EducationSection />
@@ -162,9 +159,7 @@ export default () => {
       <Box>
         <Flex justifyContent="space-between">
           <Box width={1 / 3}>
-            <h1>
-              <span>Work</span>
-            </h1>
+            <Text variant="subHeading">Work</Text>
           </Box>
           <Box width={2 / 3}>
             <WorkSection />

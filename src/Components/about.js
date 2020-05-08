@@ -1,54 +1,71 @@
 import React from 'react';
-import Margarita from '../images/1571475410.jpg';
+import Margarita from '../images/margarita.jpg';
 import { FaDownload } from 'react-icons/fa';
-import { Flex, Box, Link, Image, Button } from 'rebass';
+import { Flex, Box, Link, Image, Button, Text } from 'rebass';
 
 export default () => (
-  <Flex id="about" bg="primary">
-    <Box width={1 / 3} className="three columns">
+  <Flex
+    id="about"
+    bg="secondary"
+    alignItems="center"
+    justifyContent="space-around"
+    py={4}
+  >
+    <Box width={1 / 3} sx={{textAlign: 'center'}}>
       <Image
         src={Margarita}
         alt="Margarita Profile Pic"
         sx={{
-          width: ['100%', '50%'],
+          width: ['100%', '60%'],
           borderRadius: '50%',
+          border: '5px solid #fff'
         }}
       />
     </Box>
-    <Box width={2 / 3} className="nine columns main-col">
-      <h2>About Me</h2>
-
-      <p>
+    <Box width={2 / 3} my={3}>
+      <Text variant="subHeading" as="h2" my={3}>
+        About Me
+      </Text>
+      <Text variant="body" as="p" mt={4} mb={5} width={4 / 5}>
         Experience in building full-stack web apps, familiar with JavaScript,
         Ruby, Matlab, C and SQL. I meditate by building virtual architectures,
         creating smoother user interface and solving new problems each day. A
         dedicated team player and a solution-oriented team leader. Kept awake by
         coffee, quality food, pep talks and ideas that fuel imagination.
-      </p>
-      <h2>Contact Details</h2>
+      </Text>
+      <Text variant="subHeading" as="h2" my={2}>
+        Contact Details
+      </Text>
       <Flex>
-        <Box width={1 / 2}>
-          <span>Margarita Wang</span>
+        <Box width={1 / 2} my={3}>
+          <Text variant="body" as="span">
+            Margarita Wang
+          </Text>
           <br />
-          <span>San Francisco, California</span>
+          <Text variant="body" as="span">
+            San Francisco, California
+          </Text>
           <br />
-          <span>(415) 910 - 4137</span>
+          <Text variant="body" as="span">
+            (415) 910 - 4137
+          </Text>
           <br />
-          <span>margaritaawang@gmail.com</span>
+          <Text variant="body" as="span">
+            margaritaawang@gmail.com
+          </Text>
         </Box>
         <Box width={1 / 2}>
-          <Link
-            href="https://resume.creddle.io/resume/2wzomyp8z1o"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button variant="primary">
-              <i>
-                <FaDownload />
-              </i>
+          <Button variant="secondary" p={3}>
+            <Link
+              href="https://resume.creddle.io/resume/2wzomyp8z1o"
+              target="_blank"
+              rel="noopener noreferrer"
+              variant='nav'
+            >
+              <FaDownload style={{marginRight: 8}}/>
               Download Resume
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </Box>
       </Flex>
     </Box>

@@ -5,23 +5,43 @@ import { Flex } from 'rebass';
 import Navbar from '../Components/navbar';
 import About from '../Components/about';
 import Header from '../Components/header';
-import backgroundImage from '../images/dark-purple-blurred-water.jpg';
+import backgroundImage from '../images/art-books-bright-contemporary-174671.jpg';
 import Resume from '../Components/resume';
+import { Helmet } from 'react-helmet';
 
 export default props => (
-  <ThemeProvider theme={theme}>
-    {/* <Flex
-      flexDirection="column"
-      sx={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        height: '100vh',
-      }}
-    > */}
-      <Navbar />
-      <Header />
-    {/* </Flex> */}
-    <About />
-    <Resume />
-  </ThemeProvider>
+  <>
+    <Helmet
+      style={[
+        {
+          cssText: `
+          #___gatsby {
+                margin: -8px;
+            }
+        `,
+        },
+      ]}
+    >
+      <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
+        rel="stylesheet"
+      />
+    </Helmet>
+    <ThemeProvider theme={theme}>
+      <Flex
+        flexDirection="column"
+        sx={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: 'cover',
+          color: 'white',
+          height: '100vh',
+        }}
+      >
+        <Navbar />
+        <Header />
+      </Flex>
+      <About />
+      <Resume />
+    </ThemeProvider>
+  </>
 );

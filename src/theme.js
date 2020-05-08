@@ -6,7 +6,7 @@ export default {
     background: '#fff',
     primary: '#f9c5bd', // Misty Mountain Pink
     secondary: '#ffe5c0', // Light Yellow
-    tertiary: '#3D518C', // dark blue
+    tertiary: '#8076a3', // Purple Mountains Majesty
     muted: '#AAA',
     tableHeader: 'rgba(0,0,0,0.03)',
     buttonGrey: '#EBEDF3',
@@ -51,7 +51,7 @@ export default {
       lineHeight: 'body'
     },
     heading: {
-      color: 'background',
+      color: 'tertiary',
       fontFamily: 'body',
       fontSize: [8],
       lineHeight: 'heading'
