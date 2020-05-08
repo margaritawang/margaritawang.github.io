@@ -40,38 +40,43 @@ export default {
     },
     icon: {
       color: 'text',
-      fontSize: [5]
-    }
+      fontSize: [5],
+    },
   },
   text: {
     subHeading: {
       color: 'text',
       fontFamily: 'body',
       fontSize: [5],
-      lineHeight: 'body'
+      lineHeight: 'body',
     },
     heading: {
       color: 'tertiary',
       fontFamily: 'body',
       fontSize: [8],
-      lineHeight: 'heading'
+      lineHeight: 'heading',
     },
     body: {
       color: 'text',
-      fontFamily: 'body', 
-      lineHeight: 'body'
-    }
+      fontFamily: 'body',
+      lineHeight: 'body',
+    },
+    title: {
+      color: 'tertiary',
+      fontFamily: 'monospace',
+      lineHeight: 'body',
+    },
   },
   buttons: {
     primary: {
       color: 'white',
       bg: 'secondary',
-      fontFamily: 'body', 
+      fontFamily: 'body',
     },
     secondary: {
       color: 'white',
       bg: 'primary',
-      fontFamily: 'body', 
+      fontFamily: 'body',
     },
   },
 };

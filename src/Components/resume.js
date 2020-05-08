@@ -1,22 +1,58 @@
 import React from 'react';
 import { Flex, Box, Text, Link, Image, Button } from 'rebass';
+import { FaUserGraduate, FaLaptopCode } from 'react-icons/fa';
+
 const EducationSection = () => (
-  <Flex flexDirection="column">
+  <Flex
+    flexDirection="row"
+    justifyContent="space-around"
+    sx={{ textAlign: 'center' }}
+    my={4}
+  >
     <Box>
-      <h3>University of British Columbia</h3>
-      <p className="info">
-        Bachelor of Applied Science <span>&bull;</span>
-        <em className="date">May 2017</em>
-      </p>
-      <p>B.Eng. Chemical Engineering - Commerce Minor</p>
+      <Box
+        sx={{
+          display: 'inline-block',
+          color: 'white',
+          bg: 'primary',
+          fontSize: 64,
+          borderRadius: 9999,
+          height: 128,
+        }}
+        m={3}
+        px={4}
+        py={4}
+      >
+        <FaUserGraduate />
+      </Box>
+
+      <Text variant="title">University of British Columbia</Text>
+      <Text variant="body">
+        Bachelor of Applied Science <span>&bull;</span> <em>May 2017</em>
+      </Text>
+      <Text variant="body">B.Eng. Chemical Engineering - Commerce Minor</Text>
     </Box>
     <Box>
-      <h3>Lighthouse Labs</h3>
-      <p className="info">
-        Web Development Diploma <span>&bull;</span>
-        <em className="date">Feb 2018</em>
-      </p>
-      <p>Web Development Immersive Bootcamp</p>
+      <Box
+        sx={{
+          display: 'inline-block',
+          color: 'white',
+          bg: 'primary',
+          fontSize: 64,
+          borderRadius: 9999,
+          height: 128,
+        }}
+        m={3}
+        px={4}
+        py={4}
+      >
+        <FaLaptopCode />
+      </Box>
+      <Text variant="title">Lighthouse Labs</Text>
+      <Text variant="body">
+        Web Development Diploma <span>&bull;</span> <em>Feb 2018</em>
+      </Text>
+      <Text variant="body">Web Development Immersive Bootcamp</Text>
     </Box>
   </Flex>
 );
@@ -138,33 +174,28 @@ export default () => {
       flexDirection="column"
       alignItems="center"
       mx="auto"
-      sx={{
-        width: '80%',
-      }}
+      my={4}
     >
       <Box
         sx={{
-          width: '100%',
+          width: '80%',
         }}
       >
-        <Flex justifyContent="space-between">
-          <Box width={1 / 3}>
-            <Text variant="subHeading">Education</Text>
-          </Box>
-          <Box width={2 / 3}>
-            <EducationSection />
-          </Box>
-        </Flex>
+        <Text as="h2" variant="subHeading">
+          Education
+        </Text>
+        <EducationSection />
       </Box>
-      <Box>
-        <Flex justifyContent="space-between">
-          <Box width={1 / 3}>
-            <Text variant="subHeading">Work</Text>
-          </Box>
-          <Box width={2 / 3}>
-            <WorkSection />
-          </Box>
-        </Flex>
+      <Box
+        sx={{
+          width: '80%',
+        }}
+      >
+        <Text variant="subHeading" as="h2">
+          Work
+        </Text>
+
+        <WorkSection />
       </Box>
       <Box className="row skill">
         <div className="three columns header-col">
