@@ -1,11 +1,11 @@
 export default {
   breakpoints: ['40em', '52em', '64em'],
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
+  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   colors: {
-    text: '#4A4A4A',
+    text: '#7c677f', //Factory Stone Purple
     background: '#fff',
-    primary: '#FFB30F', // golden
-    secondary: '#5AA25A', //dark green
+    primary: '#f9c5bd', // Misty Mountain Pink
+    secondary: '#ffe5c0', // Light Yellow
     tertiary: '#3D518C', // dark blue
     muted: '#AAA',
     tableHeader: 'rgba(0,0,0,0.03)',
@@ -15,8 +15,8 @@ export default {
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
-    body: 'system-ui, sans-serif',
-    heading: 'inherit',
+    body: '"Comfortaa", cursive',
+    heading: 'Comfortaa',
     monospace: 'Menlo, monospace',
   },
   fontWeights: {
@@ -32,12 +32,46 @@ export default {
     small: '0 0 4px rgba(0, 0, 0, .125)',
     large: '0 0 24px rgba(0, 0, 0, .125)',
   },
-  variants: {},
-  text: {},
+  variants: {
+    nav: {
+      textDecoration: 'none',
+      color: 'text',
+      fontFamily: 'body',
+    },
+    icon: {
+      color: 'text',
+      fontSize: [5]
+    }
+  },
+  text: {
+    subHeading: {
+      color: 'text',
+      fontFamily: 'body',
+      fontSize: [5],
+      lineHeight: 'body'
+    },
+    heading: {
+      color: 'background',
+      fontFamily: 'body',
+      fontSize: [8],
+      lineHeight: 'heading'
+    },
+    body: {
+      color: 'text',
+      fontFamily: 'body', 
+      lineHeight: 'body'
+    }
+  },
   buttons: {
     primary: {
       color: 'white',
       bg: 'secondary',
+      fontFamily: 'body', 
+    },
+    secondary: {
+      color: 'white',
+      bg: 'primary',
+      fontFamily: 'body', 
     },
   },
 };
