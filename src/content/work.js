@@ -1,3 +1,39 @@
+export const navBar = [
+  {
+    label: 'Home',
+    href: '#',
+  },
+  {
+    label: 'About',
+    href: '#about',
+  },
+  {
+    label: 'Resume',
+    href: '#resume',
+  },
+  {
+    label: 'Skills',
+    href: '#skills',
+  },
+];
+
+export const education = [
+  {
+    school: 'University of British Columbia',
+    diploma: 'Bachelor of Applied Science',
+    date: 'May 2017',
+    major: 'B.Eng. Chemical Engineering - Commerce Minor',
+    icon: 'FaUserGraduate',
+  },
+  {
+    school: 'Lighthouse Labs',
+    diploma: 'Web Development Diploma',
+    date: 'Feb 2018',
+    major: 'Web Development Immersive Bootcamp',
+    icon: 'FaLaptopCode',
+  },
+];
+
 export const work = [
   {
     company: 'TerraTrue',

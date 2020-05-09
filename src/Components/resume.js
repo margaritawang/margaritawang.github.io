@@ -1,54 +1,43 @@
 import React from 'react';
 import { Flex, Box, Text, Link, Image, Button } from 'rebass';
-import { FaUserGraduate, FaLaptopCode } from 'react-icons/fa';
-import { work } from '../content/work';
-const EducationSection = () => (
-  <Flex justifyContent="space-around" sx={{ textAlign: 'center' }} my={5}>
-    <Box width={[1, 1 / 2]}>
-      <Box
-        sx={{
-          display: 'inline-block',
-          color: 'white',
-          bg: 'primary',
-          fontSize: 64,
-          borderRadius: 9999,
-          height: 128,
-        }}
-        m={3}
-        px={4}
-        py={4}
-      >
-        <FaUserGraduate />
-      </Box>
+import * as icons from 'react-icons/fa';
+import { education, work } from '../content/work';
 
-      <Text variant="title">University of British Columbia</Text>
-      <Text variant="body">
-        Bachelor of Applied Science <span>&bull;</span> <em>May 2017</em>
-      </Text>
-      <Text variant="body">B.Eng. Chemical Engineering - Commerce Minor</Text>
-    </Box>
-    <Box width={[1, 1 / 2]}>
-      <Box
-        sx={{
-          display: 'inline-block',
-          color: 'white',
-          bg: 'primary',
-          fontSize: 64,
-          borderRadius: 9999,
-          height: 128,
-        }}
-        m={3}
-        px={4}
-        py={4}
-      >
-        <FaLaptopCode />
-      </Box>
-      <Text variant="title">Lighthouse Labs</Text>
-      <Text variant="body">
-        Web Development Diploma <span>&bull;</span> <em>Feb 2018</em>
-      </Text>
-      <Text variant="body">Web Development Immersive Bootcamp</Text>
-    </Box>
+const EducationSection = () => (
+  <Flex
+    justifyContent="space-around"
+    sx={{ textAlign: 'center' }}
+    my={[3, 5]}
+    flexWrap="wrap"
+  >
+    {education.map(item => {
+      const icon = icons[item.icon];
+      return (
+        <Box width={[1, 1 / 2]} pb={[3, 0]}>
+          <Box
+            sx={{
+              display: 'inline-block',
+              color: 'white',
+              bg: 'primary',
+              fontSize: 64,
+              borderRadius: 9999,
+              height: 128,
+            }}
+            m={3}
+            px={4}
+            py={4}
+          >
+            {icon()}
+          </Box>
+
+          <Text variant="title">{item.school}</Text>
+          <Text variant="body">
+            {item.diploma} <span>&bull;</span> <em>{item.date}</em>
+          </Text>
+          <Text variant="body">{item.major}</Text>
+        </Box>
+      );
+    })}
   </Flex>
 );
 

@@ -1,5 +1,5 @@
 export default {
-  breakpoints: ['320px', '52em', '64em'],
+  breakpoints: ['426px', '769px', '64em'],
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   colors: {
     text: '#7c677f', //Factory Stone Purple

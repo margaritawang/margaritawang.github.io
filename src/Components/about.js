@@ -6,6 +6,7 @@ import { Flex, Box, Link, Image, Button, Text } from 'rebass';
 export default () => (
   <Flex
     id="about"
+    flexWrap="wrap"
     bg="secondary"
     alignItems="center"
     justifyContent="space-around"
@@ -16,17 +17,17 @@ export default () => (
         src={Margarita}
         alt="Margarita Profile Pic"
         sx={{
-          width: ['100%', '60%'],
+          width: ['90%', '70%', '60%'],
           borderRadius: '50%',
           border: '5px solid #fff',
         }}
       />
     </Box>
-    <Box width={[1, 2 / 3]} my={3}>
+    <Box width={[1, 2 / 3]} my={3} px={[4, 2, 0]}>
       <Text variant="subHeading" as="h2" my={3}>
         About Me
       </Text>
-      <Text variant="body" as="p" mt={4} mb={5} width={4 / 5}>
+      <Text variant="body" as="p" mt={4} mb={5} width={[1, 1, 4 / 5]}>
         Experienced in building full-stack web apps, familiar with JavaScript,
         Ruby, Rust, PHP and SQL. I meditate by building virtual architectures,
         creating smoother user interface and solving new problems each day. A
@@ -37,8 +38,8 @@ export default () => (
       <Text variant="subHeading" as="h2" my={2}>
         Contact Details
       </Text>
-      <Flex>
-        <Box width={1 / 2} my={3}>
+      <Flex flexWrap="wrap" alignItems="center">
+        <Box width={[1, 1 / 2]} my={3}>
           <Text variant="body" as="span">
             Margarita Wang
           </Text>
@@ -55,8 +56,8 @@ export default () => (
             margaritaawang@gmail.com
           </Text>
         </Box>
-        <Box width={1 / 2}>
-          <Button variant="secondary" p={3}>
+        <Box width={[1, 1 / 2]}>
+          <Button variant="secondary" p={3} my={[3, 0]} ml={[0, 4]}>
             <Link
               href="https://resume.creddle.io/resume/2wzomyp8z1o"
               target="_blank"
