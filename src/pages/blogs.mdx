@@ -1,0 +1,25 @@
+import { Box } from 'rebass'
+import { ThemeProvider } from 'emotion-theming'
+import theme from '../theme'
+
+# MDX Example
+<ThemeProvider theme={theme}>
+<Box
+  sx={{
+    ul: {
+      listStyle: 'none',
+      display: 'grid',
+      padding: 0,
+      gridGap: 3,
+      gridTemplateColumns: 'repeat(auto-fit, minmax(128px, 1fr))',
+    },
+    li: {
+      fontWeight: 'bold',
+    }
+  }}>
+- This is a list
+- Displayed in a grid layout
+- With custom styles
+- Pretty cool, huh?
+</Box>
+</ThemeProvider>
