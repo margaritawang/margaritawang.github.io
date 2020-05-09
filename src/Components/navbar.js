@@ -4,10 +4,28 @@ import { Flex, Box, Link, Text } from 'rebass';
 export default () => (
   <Flex
     bg="primary"
-    sx={{ position: 'fixed', boxShadow: '4px 4px 10px 1px rgba(0,0,0,0.1)' }}
+    sx={{
+      position: 'fixed',
+      boxShadow: '4px 4px 10px 1px rgba(0,0,0,0.1)',
+      zIndex: 999999,
+      textAlign: 'center',
+    }}
     width="100%"
   >
-    <Box p={3} width={1 / 5} color="text">
+    <Box p={3} width={1 / 6} color="text">
+      <Link
+        sx={{
+          display: 'inline-block',
+          px: 2,
+          py: 1,
+        }}
+        variant="nav"
+        href="#"
+      >
+        Home
+      </Link>
+    </Box>
+    <Box p={3} width={1 / 6} color="text">
       <Link
         sx={{
           display: 'inline-block',
@@ -20,7 +38,7 @@ export default () => (
         About
       </Link>
     </Box>
-    <Box p={3} width={1 / 5} color="text" sx={{ zIndex: 100 }}>
+    <Box p={3} width={1 / 6} color="text" sx={{ zIndex: 100 }}>
       <Link
         sx={{
           display: 'inline-block',
@@ -33,7 +51,7 @@ export default () => (
         Resume
       </Link>
     </Box>
-    <Box p={3} width={1 / 5} color="text" sx={{ zIndex: 100 }}>
+    <Box p={3} width={1 / 6} color="text" sx={{ zIndex: 100 }}>
       <Link
         sx={{
           display: 'inline-block',
@@ -41,12 +59,12 @@ export default () => (
           py: 1,
         }}
         variant="nav"
-        href="#work"
+        href="#skills"
       >
-        Portfolio
+        Skills
       </Link>
     </Box>
-    <Box p={3} width={1 / 5} color="text" sx={{ zIndex: 100 }}>
+    <Box p={3} width={1 / 6} color="text" sx={{ zIndex: 100 }}>
       <Link
         sx={{
           display: 'inline-block',
@@ -59,7 +77,7 @@ export default () => (
         Contact
       </Link>
     </Box>
-    <Box p={3} width={1 / 5} color="text" sx={{ zIndex: 100 }}>
+    <Box p={3} width={1 / 6} color="text" sx={{ zIndex: 100 }}>
       <Link
         sx={{
           display: 'inline-block',

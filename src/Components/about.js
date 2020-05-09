@@ -11,27 +11,28 @@ export default () => (
     justifyContent="space-around"
     py={4}
   >
-    <Box width={1 / 3} sx={{textAlign: 'center'}}>
+    <Box width={[1, 1 / 3]} sx={{ textAlign: 'center' }}>
       <Image
         src={Margarita}
         alt="Margarita Profile Pic"
         sx={{
           width: ['100%', '60%'],
           borderRadius: '50%',
-          border: '5px solid #fff'
+          border: '5px solid #fff',
         }}
       />
     </Box>
-    <Box width={2 / 3} my={3}>
+    <Box width={[1, 2 / 3]} my={3}>
       <Text variant="subHeading" as="h2" my={3}>
         About Me
       </Text>
       <Text variant="body" as="p" mt={4} mb={5} width={4 / 5}>
-        Experience in building full-stack web apps, familiar with JavaScript,
-        Ruby, Matlab, C and SQL. I meditate by building virtual architectures,
+        Experienced in building full-stack web apps, familiar with JavaScript,
+        Ruby, Rust, PHP and SQL. I meditate by building virtual architectures,
         creating smoother user interface and solving new problems each day. A
-        dedicated team player and a solution-oriented team leader. Kept awake by
-        coffee, quality food, pep talks and ideas that fuel imagination.
+        dedicated team player and a solution-oriented team leader. Kept wide
+        awake by coffee, quality food, pep talks and ideas that fuel
+        imagination.
       </Text>
       <Text variant="subHeading" as="h2" my={2}>
         Contact Details
@@ -60,9 +61,9 @@ export default () => (
               href="https://resume.creddle.io/resume/2wzomyp8z1o"
               target="_blank"
               rel="noopener noreferrer"
-              variant='nav'
+              variant="nav"
             >
-              <FaDownload style={{marginRight: 8}}/>
+              <FaDownload style={{ marginRight: 8 }} />
               Download Resume
             </Link>
           </Button>

@@ -5,6 +5,7 @@ import { Flex } from 'rebass';
 import Navbar from '../Components/navbar';
 import About from '../Components/about';
 import Header from '../Components/header';
+import Skills from '../Components/skills';
 import backgroundImage from '../images/art-books-bright-contemporary-174671.jpg';
 import Resume from '../Components/resume';
 import { Helmet } from 'react-helmet';
@@ -15,9 +16,14 @@ export default props => (
       style={[
         {
           cssText: `
-          #___gatsby {
-                margin: -8px;
-            }
+          body {
+            margin: 0;
+            scroll-behavior: smooth;
+          }
+
+          html, body,#___gatsby {
+            height: 100%;
+          }
         `,
         },
       ]}
@@ -28,20 +34,22 @@ export default props => (
       />
     </Helmet>
     <ThemeProvider theme={theme}>
+      <Navbar />
       <Flex
         flexDirection="column"
         sx={{
           backgroundImage: `url(${backgroundImage})`,
+          backgroundPosition: 'center',
           backgroundSize: 'cover',
           color: 'white',
           height: '100vh',
         }}
       >
-        <Navbar />
         <Header />
       </Flex>
       <About />
       <Resume />
+      <Skills />
     </ThemeProvider>
   </>
 );

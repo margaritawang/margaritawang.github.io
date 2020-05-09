@@ -1,5 +1,5 @@
 export default {
-  breakpoints: ['40em', '52em', '64em'],
+  breakpoints: ['320px', '52em', '64em'],
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   colors: {
     text: '#7c677f', //Factory Stone Purple
@@ -40,20 +40,20 @@ export default {
     },
     icon: {
       color: 'text',
-      fontSize: [5],
+      fontSize: 40,
     },
   },
   text: {
     subHeading: {
       color: 'text',
       fontFamily: 'body',
-      fontSize: [5],
+      fontSize: [4, 5],
       lineHeight: 'body',
     },
     heading: {
       color: 'tertiary',
       fontFamily: 'body',
-      fontSize: [8],
+      fontSize: [6, 8],
       lineHeight: 'heading',
     },
     body: {
@@ -65,6 +65,12 @@ export default {
       color: 'tertiary',
       fontFamily: 'monospace',
       lineHeight: 'body',
+    },
+    caption: {
+      color: 'text',
+      fontFamily: 'body',
+      lineHeight: 'body',
+      fontSize: 13,
     },
   },
   buttons: {
