@@ -1,6 +1,5 @@
 import React from 'react';
 import { Flex, Box, Text, Link, Image, Button } from 'rebass';
-import { FaUserGraduate, FaLaptopCode } from 'react-icons/fa';
 import { skills } from '../content/work';
 export default () => {
   return (
@@ -16,19 +15,31 @@ export default () => {
         Skills
       </Text>
       <Flex
-        width={3 / 4}
+        width={[1, 1, 3 / 4]}
         flexDirection="column"
         justifyContent="space-around"
         my={4}
       >
         {skills.map(item => (
-          <Flex m={3} justifyContent="space-between" alignItems="stretch">
-            <Box width={2 / 12}>
+          <Flex
+            key={item.name}
+            m={3}
+            mx={[3, 5, 3]}
+            justifyContent="space-between"
+            alignItems="stretch"
+            flexWrap="wrap"
+          >
+            <Box width={[1, 1, 2 / 12]} mb={[2, 2, 0]}>
               <Text variant="title" color="background">
                 {item.name}
               </Text>
             </Box>
-            <Box width={9 / 12} bg="primary" sx={{ borderRadius: 5 }}>
+            <Box
+              width={[9 / 12, 10 / 12, 9 / 12]}
+              bg="primary"
+              sx={{ borderRadius: 5 }}
+              height={20}
+            >
               <Box
                 bg="secondary"
                 width={item.proficiency}
@@ -38,7 +49,7 @@ export default () => {
                 }}
               />
             </Box>
-            <Box width={1 / 12} ml={4}>
+            <Box width={[3 / 12, 2 / 12, 1 / 12]} pl={4}>
               <Text variant="caption" color="background">
                 {item.proficiency}
               </Text>

@@ -13,7 +13,7 @@ const EducationSection = () => (
     {education.map(item => {
       const icon = icons[item.icon];
       return (
-        <Box width={[1, 1 / 2]} pb={[3, 0]}>
+        <Box key={item.school} width={[1, 1 / 2]} pb={[3, 0]}>
           <Box
             sx={{
               display: 'inline-block',
@@ -45,14 +45,15 @@ const WorkSection = () => {
   return (
     <Flex
       flexDirection="column"
-      my={4}
+      flexWrap="wrap"
+      my={[2, 2, 4]}
       sx={{
         position: 'relative',
         maxWidth: 1200,
         '::after': {
           content: '""',
           position: 'absolute',
-          width: 6,
+          width: [0, 0, 6],
           backgroundColor: 'tertiary',
           top: 3,
           bottom: 0,
@@ -65,17 +66,18 @@ const WorkSection = () => {
       {work.map((item, index) => {
         return (
           <Box
-            px={5}
+            key={item.company}
+            px={[2, 5]}
             py={2}
+            width={[1, 1, 1 / 2]}
             sx={{
               position: 'relative',
-              width: '50%',
-              left: index % 2 === 0 ? '0' : '50%',
+              left: index % 2 === 0 ? '0' : [0, 0, '50%'],
               '::after': {
                 content: '""',
                 position: 'absolute',
-                width: 25,
-                height: 25,
+                width: [0, 0, 25],
+                height: [0, 0, 25],
                 right: -11,
                 backgroundColor: 'primary',
                 top: 2,
@@ -90,8 +92,8 @@ const WorkSection = () => {
             </Text>
             <Text variant="body">{item.location}</Text>
             <ul style={{ paddingInlineStart: 24 }}>
-              {item.duties.map(duty => (
-                <li>
+              {item.duties.map((duty, index) => (
+                <li key={`duty-${index}`}>
                   <Text variant="caption">{duty}</Text>
                 </li>
               ))}
@@ -105,13 +107,13 @@ const WorkSection = () => {
 
 export default () => (
   <Flex id="resume" flexDirection="column" alignItems="center" mx="auto" my={4}>
-    <Box width={'80%'}>
+    <Box width={[9 / 10, 9 / 10, 4 / 5]}>
       <Text as="h2" variant="subHeading">
         Education
       </Text>
       <EducationSection />
     </Box>
-    <Box width={'80%'}>
+    <Box width={[9 / 10, 9 / 10, 4 / 5]}>
       <Text variant="subHeading" as="h2">
         Work
       </Text>
