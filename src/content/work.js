@@ -94,7 +94,7 @@ export const skills = [
   },
   {
     name: 'Redux',
-    proficiency: '70%',
+    proficiency: '80%',
   },
   {
     name: 'PHP',

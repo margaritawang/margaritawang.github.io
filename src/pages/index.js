@@ -28,6 +28,7 @@ export default props => (
         },
       ]}
     >
+      <title>Margaritaville</title>
       <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
         rel="stylesheet"
