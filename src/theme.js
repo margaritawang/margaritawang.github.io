@@ -39,6 +39,7 @@ export default {
       color: 'tertiary',
       fontFamily: 'body',
       transition: 'all .3s ease-in-out',
+      cursor: 'pointer',
       ':hover': {
         color: 'hoverBlue',
       },
@@ -47,6 +48,7 @@ export default {
       color: 'tertiary',
       fontSize: [40, 45, 50],
       transition: 'all .3s ease-in-out',
+      cursor: 'pointer',
       ':hover': {
         color: 'hoverBlue',
       },

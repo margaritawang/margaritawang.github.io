@@ -11,7 +11,7 @@ export default () => {
       mx="auto"
       py={4}
     >
-      <Text as="h2" variant="subHeading" color="background" mt={4}>
+      <Text as="h2" variant="subHeading" color="background" mt={5}>
         Skills
       </Text>
       <Flex

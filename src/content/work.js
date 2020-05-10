@@ -1,19 +1,18 @@
 export const navBar = [
   {
     label: 'Home',
-    href: '#',
   },
   {
     label: 'About',
-    href: '#about',
+    href: 'about',
   },
   {
     label: 'Resume',
-    href: '#resume',
+    href: 'resume',
   },
   {
     label: 'Skills',
-    href: '#skills',
+    href: 'skills',
   },
 ];
 

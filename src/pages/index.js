@@ -10,6 +10,19 @@ import backgroundImage from '../images/imageedit_1_7862756946.png';
 import Resume from '../Components/resume';
 import Footer from '../Components/footer';
 import { Helmet } from 'react-helmet';
+import { animateScroll, scroller } from 'react-scroll';
+
+const scrollTo = id => {
+  if (id) {
+    scroller.scrollTo(id, {
+      duration: 500,
+      smooth: true,
+      isDynamic: true,
+    });
+  } else {
+    animateScroll.scrollToTop();
+  }
+};
 
 export default props => (
   <>
@@ -36,7 +49,7 @@ export default props => (
       />
     </Helmet>
     <ThemeProvider theme={theme}>
-      <Navbar />
+      <Navbar scrollTo={scrollTo} />
       <Flex
         flexDirection="column"
         sx={{
@@ -47,7 +60,7 @@ export default props => (
           height: '100vh',
         }}
       >
-        <Header />
+        <Header scrollTo={scrollTo} />
       </Flex>
       <About />
       <Resume />

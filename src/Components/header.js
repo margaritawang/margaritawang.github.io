@@ -8,7 +8,7 @@ import {
 import { Flex, Box, Link, Text } from 'rebass';
 import backgroundImage from '../images/art-books-bright-contemporary-174671.jpg';
 
-export default () => (
+export default ({ scrollTo }) => (
   <>
     <Flex
       flexWrap="wrap"
@@ -81,7 +81,7 @@ export default () => (
       </Box>
     </Flex>
     <Flex justifyContent="center">
-      <Link href="#about" variant="icon">
+      <Link variant="icon" onClick={() => scrollTo('about')}>
         <FaArrowCircleDown />
       </Link>
     </Flex>

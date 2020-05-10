@@ -2,7 +2,7 @@ import React from 'react';
 import { Flex, Box, Link, Text } from 'rebass';
 import { navBar } from '../content/work';
 
-export default () => (
+export default ({ scrollTo }) => (
   <Flex
     bg="primary"
     sx={{
@@ -24,7 +24,7 @@ export default () => (
             py: 1,
           }}
           variant="nav"
-          href={item.href}
+          onClick={() => scrollTo(item.href)}
         >
           {item.label}
         </Link>
