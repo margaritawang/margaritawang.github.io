@@ -80,7 +80,15 @@ export default ({ scrollTo }) => (
         </Flex>
       </Box>
     </Flex>
-    <Flex justifyContent="center">
+    <Flex
+      justifyContent="center"
+      sx={{
+        position: 'absolute',
+        bottom: [4, 5],
+        left: 0,
+        right: 0,
+      }}
+    >
       <Link variant="icon" onClick={() => scrollTo('about')}>
         <FaArrowCircleDown />
       </Link>
