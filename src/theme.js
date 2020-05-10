@@ -8,6 +8,7 @@ export default {
     secondary: '#ffe5c0', // Light Yellow
     tertiary: '#8076a3', // Purple Mountains Majesty
     muted: '#AAA',
+    hoverBlue: '#95c9e1',
     tableHeader: 'rgba(0,0,0,0.03)',
     buttonGrey: '#EBEDF3',
     warning: 'rgba(245, 65, 0, 1)',
@@ -35,12 +36,20 @@ export default {
   variants: {
     nav: {
       textDecoration: 'none',
-      color: 'text',
+      color: 'tertiary',
       fontFamily: 'body',
+      transition: 'all .3s ease-in-out',
+      ':hover': {
+        color: 'hoverBlue',
+      },
     },
     icon: {
-      color: 'text',
-      fontSize: 40,
+      color: 'tertiary',
+      fontSize: [40, 45, 50],
+      transition: 'all .3s ease-in-out',
+      ':hover': {
+        color: 'hoverBlue',
+      },
     },
   },
   text: {

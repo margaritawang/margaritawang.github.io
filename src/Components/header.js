@@ -14,7 +14,7 @@ export default () => (
       flexWrap="wrap"
       alignItems="center"
       justifyContent="space-between"
-      minHeight="90%"
+      minHeight="85%"
       pt={[5]}
     >
       <Box width={[1, 2 / 3]} px={[3, 5]}>
