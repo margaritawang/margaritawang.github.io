@@ -1,5 +1,5 @@
 export default {
-  breakpoints: ['426px', '769px', '1023px'],
+  breakpoints: ['426px', '769px', '1025px', '1249px'],
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   colors: {
     text: '#7c677f', //Factory Stone Purple
@@ -53,7 +53,7 @@ export default {
     heading: {
       color: 'tertiary',
       fontFamily: 'body',
-      fontSize: [6, 8],
+      fontSize: [6, 6, 6, 8],
       lineHeight: 'heading',
     },
     body: {

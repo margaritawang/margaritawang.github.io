@@ -24,7 +24,13 @@ export default () => (
         <Text variant="heading" as="h1" my={4}>
           I'm Margarita Wang.
         </Text>
-        <Text variant="body" as="p" my={4} width={[1, 1, 3 / 5]} px={[2, 0]}>
+        <Text
+          variant="body"
+          as="p"
+          my={4}
+          width={[1, 1, 4 / 5, 3 / 5]}
+          px={[2, 0]}
+        >
           I'm a <em>front-end focused software engineer</em> with a degree in
           Chemical Engineering currently developing robust code for
           <em>TerraTrue</em>, a cutting-edge Privacy Platform based in San
@@ -33,12 +39,12 @@ export default () => (
       </Box>
       <Box width={[1, 1 / 3]} px={[3, 5]}>
         <Flex
-          ml={[0, 5, 7]}
+          ml={[0, 5, 6, 7]}
           alignItems="flex-end"
-          pr={[0, 0, 4]}
+          pr={[0, 0, 0, 4]}
           flexWrap="wrap"
         >
-          <Box width={[1 / 3, 1]}>
+          <Box width={[1 / 3, 1]} mb={[2, 3, 4]} sx={{ textAlign: 'center' }}>
             <Link
               target="_blank"
               rel="noopener noreferrer"
@@ -49,7 +55,7 @@ export default () => (
               <FaLinkedin />
             </Link>
           </Box>
-          <Box width={[1 / 3, 1]}>
+          <Box width={[1 / 3, 1]} mb={[2, 3, 4]} sx={{ textAlign: 'center' }}>
             <Link
               target="_blank"
               rel="noopener noreferrer"
@@ -60,7 +66,7 @@ export default () => (
               <FaInstagram />
             </Link>
           </Box>
-          <Box width={[1 / 3, 1]}>
+          <Box width={[1 / 3, 1]} mb={[2, 3, 4]} sx={{ textAlign: 'center' }}>
             <Link
               target="_blank"
               rel="noopener noreferrer"

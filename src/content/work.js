@@ -97,6 +97,14 @@ export const skills = [
     proficiency: '70%',
   },
   {
+    name: 'PHP',
+    proficiency: '60%',
+  },
+  {
+    name: 'Laravel',
+    proficiency: '60%',
+  },
+  {
     name: 'Rust',
     proficiency: '30%',
   },

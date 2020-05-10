@@ -6,7 +6,7 @@ import Navbar from '../Components/navbar';
 import About from '../Components/about';
 import Header from '../Components/header';
 import Skills from '../Components/skills';
-import backgroundImage from '../images/art-books-bright-contemporary-174671.jpg';
+import backgroundImage from '../images/imageedit_1_7862756946.png';
 import Resume from '../Components/resume';
 import { Helmet } from 'react-helmet';
 
