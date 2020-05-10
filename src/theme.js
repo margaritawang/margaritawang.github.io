@@ -53,17 +53,19 @@ export default {
     heading: {
       color: 'tertiary',
       fontFamily: 'body',
-      fontSize: [6, 6, 6, 8],
+      fontSize: [5, 7, 8],
       lineHeight: 'heading',
     },
     body: {
       color: 'text',
       fontFamily: 'body',
       lineHeight: 'body',
+      fontSize: [0, 1],
     },
     title: {
       color: 'tertiary',
       fontFamily: 'monospace',
+      fontSize: [0, 1],
       lineHeight: 'body',
     },
     caption: {
