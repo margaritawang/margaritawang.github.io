@@ -84,7 +84,7 @@ export default ({ scrollTo }) => (
       justifyContent="center"
       sx={{
         position: 'absolute',
-        bottom: [4, 5],
+        bottom: [3, 5],
         left: 0,
         right: 0,
       }}
