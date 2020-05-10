@@ -8,6 +8,7 @@ import Header from '../Components/header';
 import Skills from '../Components/skills';
 import backgroundImage from '../images/imageedit_1_7862756946.png';
 import Resume from '../Components/resume';
+import Footer from '../Components/footer';
 import { Helmet } from 'react-helmet';
 
 export default props => (
@@ -51,6 +52,7 @@ export default props => (
       <About />
       <Resume />
       <Skills />
+      <Footer />
     </ThemeProvider>
   </>
 );

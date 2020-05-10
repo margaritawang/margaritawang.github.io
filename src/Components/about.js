@@ -10,7 +10,7 @@ export default () => (
     bg="secondary"
     alignItems="center"
     justifyContent="space-around"
-    py={4}
+    py={5}
   >
     <Box width={[1, 1 / 3]} sx={{ textAlign: 'center' }}>
       <Image

@@ -9,9 +9,9 @@ export default () => {
       flexDirection="column"
       alignItems="center"
       mx="auto"
-      my={4}
+      py={4}
     >
-      <Text as="h2" variant="subHeading" color="background" mt={5}>
+      <Text as="h2" variant="subHeading" color="background" mt={4}>
         Skills
       </Text>
       <Flex

@@ -106,8 +106,14 @@ const WorkSection = () => {
 };
 
 export default () => (
-  <Flex id="resume" flexDirection="column" alignItems="center" mx="auto" my={4}>
-    <Box width={[9 / 10, 9 / 10, 4 / 5]}>
+  <Flex
+    id="resume"
+    flexDirection="column"
+    alignItems="center"
+    mx="auto"
+    py={[5, 5, 5, 6]}
+  >
+    <Box width={[9 / 10, 9 / 10, 4 / 5]} mt={3}>
       <Text as="h2" variant="subHeading">
         Education
       </Text>
