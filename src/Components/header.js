@@ -3,14 +3,14 @@ import {
   FaLinkedin,
   FaInstagram,
   FaGithub,
-  FaArrowCircleDown,
+  FaAngleDoubleDown,
 } from 'react-icons/fa';
 import { Flex, Box, Link, Text } from 'rebass';
-import backgroundImage from '../images/art-books-bright-contemporary-174671.jpg';
 
 export default ({ scrollTo }) => (
   <>
     <Flex
+      id="header"
       flexWrap="wrap"
       alignItems="center"
       justifyContent="space-between"
@@ -84,13 +84,13 @@ export default ({ scrollTo }) => (
       justifyContent="center"
       sx={{
         position: 'absolute',
-        bottom: [3, 5],
+        bottom: [3],
         left: 0,
         right: 0,
       }}
     >
       <Link variant="icon" onClick={() => scrollTo('about')}>
-        <FaArrowCircleDown />
+        <FaAngleDoubleDown />
       </Link>
     </Flex>
   </>

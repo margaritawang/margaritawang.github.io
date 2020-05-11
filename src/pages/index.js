@@ -56,7 +56,6 @@ export default props => (
           backgroundImage: `url(${backgroundImage})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
-          color: 'white',
           height: '100vh',
         }}
       >
