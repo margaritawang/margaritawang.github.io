@@ -11,6 +11,7 @@ import Resume from '../Components/resume';
 import Footer from '../Components/footer';
 import { Helmet } from 'react-helmet';
 import { animateScroll, scroller } from 'react-scroll';
+import Layout from '../Components/Layout';
 
 const scrollTo = id => {
   if (id) {
@@ -24,31 +25,9 @@ const scrollTo = id => {
   }
 };
 
-export default props => (
+export default () => (
   <>
-    <Helmet
-      style={[
-        {
-          cssText: `
-          body {
-            margin: 0;
-            scroll-behavior: smooth;
-          }
-
-          html, body,#___gatsby {
-            height: 100%;
-          }
-        `,
-        },
-      ]}
-    >
-      <title>Margaritaville</title>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
-        rel="stylesheet"
-      />
-    </Helmet>
-    <ThemeProvider theme={theme}>
+    <Layout>
       <Navbar scrollTo={scrollTo} />
       <Flex
         flexDirection="column"
@@ -64,7 +43,6 @@ export default props => (
       <About />
       <Resume />
       <Skills />
-      <Footer />
-    </ThemeProvider>
+    </Layout>
   </>
 );
