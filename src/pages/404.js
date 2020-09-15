@@ -15,7 +15,6 @@ const NotFound = () => {
         alignItems="center"
       >
         <Text
-          //   variant="heading"
           color="tertiary"
           fontFamily="body"
           fontSize={9}
