@@ -24,20 +24,20 @@ const NotFound = () => {
           mb={[4, 4, 5]}
           sx={{ letterSpacing: 10 }}
         >
-          404
+          4 oh... 4
         </Text>
         <Box px={4}>
           <Text variant="subHeading" as="h2" my={[5]} fontSize={6}>
-            You reached the wrong spot... the sadness
+            Something went wrong... such sadness
           </Text>
         </Box>
         <Image
           src={Sad}
           height={[100, 150, 250]}
-          sx={{ position: 'absolute', right: '50px', bottom: '180px' }}
+          sx={{ position: 'absolute', right: '70px', bottom: '180px' }}
         />
         <Link href="/" variant="nav" mt={4} fontSize={4}>
-          Head home 🏡
+          Bring me home 🏡
         </Link>
       </Flex>
     </Layout>
