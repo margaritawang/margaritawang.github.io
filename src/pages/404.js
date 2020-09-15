@@ -37,7 +37,7 @@ const NotFound = () => {
           sx={{ position: 'absolute', right: '70px', bottom: '180px' }}
         />
         <Link href="/" variant="nav" mt={4} fontSize={4}>
-          Bring me home 🏡
+          Take me home 🏡
         </Link>
       </Flex>
     </Layout>
