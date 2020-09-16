@@ -1,15 +1,12 @@
 import React from 'react';
-import { ThemeProvider } from 'emotion-theming';
-import theme from '../theme';
+import Contact from '../Components/Contact';
 import { Flex } from 'rebass';
-import Navbar from '../Components/navbar';
-import About from '../Components/about';
-import Header from '../Components/header';
-import Skills from '../Components/skills';
+import Navbar from '../Components/Navbar';
+import About from '../Components/About';
+import Header from '../Components/Header';
+import Skills from '../Components/Skills';
 import backgroundImage from '../images/imageedit_1_7862756946.png';
-import Resume from '../Components/resume';
-import Footer from '../Components/footer';
-import { Helmet } from 'react-helmet';
+import Resume from '../Components/Resume';
 import { animateScroll, scroller } from 'react-scroll';
 import Layout from '../Components/Layout';
 
@@ -43,6 +40,7 @@ export default () => (
       <About />
       <Resume />
       <Skills />
+      <Contact />
     </Layout>
   </>
 );
