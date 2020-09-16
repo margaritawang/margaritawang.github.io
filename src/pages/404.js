@@ -1,6 +1,6 @@
 import React from 'react';
 import Sad from '../images/Cute-sad-dog.png';
-import Layout from '../Components/Layout';
+import Layout from '../Components/layout';
 import { Flex, Box, Link, Image, Button, Text } from 'rebass';
 const NotFound = () => {
   return (
