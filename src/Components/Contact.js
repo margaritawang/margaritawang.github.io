@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flex, Box, Text, Link, Image, Button } from 'rebass';
 import { Label, Input, Textarea } from '@rebass/forms';
-import SanFran from '../images/imageedit_1_2065693240.png';
+import SanFran from '../images/sf.png';
 
 export default () => {
   return (
@@ -11,6 +11,7 @@ export default () => {
       alignItems="center"
       mx="auto"
       pt={4}
+      backgroundColor="background"
     >
       <Text as="h2" variant="subHeading" my={5}>
         Let's chat
@@ -22,7 +23,9 @@ export default () => {
           backgroundSize: 'cover',
           minHeight: '600px',
         }}
-        pr={6}
+        pt={4}
+        px={6}
+        pb={6}
         width={1}
       >
         <Flex
@@ -30,9 +33,15 @@ export default () => {
           flexDirection="row"
           flexWrap="wrap"
           justifyContent="flex-end"
-          my={6}
+          alignItems="center"
+          my={4}
         >
-          <Box backgroundColor="primary" p={5} width="600px">
+          <Box
+            backgroundColor="primary"
+            p={5}
+            width="600px"
+            sx={{ borderRadius: 4 }}
+          >
             <form
               name="contact"
               method="post"
@@ -44,18 +53,56 @@ export default () => {
                 <Label>
                   <Text variant="body">Your Name:</Text>
                 </Label>
-                <Input type="text" name="name" mt={2} color="tertiary" />
+                <Input
+                  type="text"
+                  name="name"
+                  mt={2}
+                  p={2}
+                  height={40}
+                  color="tertiary"
+                  backgroundColor="secondary"
+                  sx={{
+                    borderRadius: 4,
+                    ':focus': { outline: 'none' },
+                    border: 'none',
+                  }}
+                />
               </Box>
               <Box my={3}>
                 <Text variant="body">Your Email:</Text>
-                <Input type="email" name="email" mt={2} color="tertiary" />
+                <Input
+                  type="email"
+                  name="email"
+                  mt={2}
+                  height={40}
+                  p={2}
+                  color="tertiary"
+                  backgroundColor="secondary"
+                  sx={{
+                    borderRadius: 4,
+                    ':focus': { outline: 'none' },
+                    border: 'none',
+                  }}
+                />
               </Box>
-              <Box my={3}>
+              <Box mt={3} mb={4}>
                 <Text variant="body">Message:</Text>
-                <Textarea name="message" mt={2} color="tertiary" />
+                <Textarea
+                  name="message"
+                  mt={2}
+                  p={2}
+                  color="tertiary"
+                  backgroundColor="secondary"
+                  sx={{
+                    borderRadius: 4,
+                    ':focus': { outline: 'none' },
+                    minHeight: 120,
+                    resize: 'none',
+                    border: 'none',
+                  }}
+                />
               </Box>
-
-              <Button type="submit" variant="primary">
+              <Button type="submit" variant="primary" p={3} width={100}>
                 Send
               </Button>
             </form>

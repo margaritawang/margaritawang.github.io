@@ -88,14 +88,22 @@ export default {
   },
   buttons: {
     primary: {
-      color: 'white',
+      color: 'text',
       bg: 'secondary',
       fontFamily: 'body',
+      outline: 'none',
+      ':hover': {
+        cursor: 'pointer',
+      },
     },
     secondary: {
       color: 'white',
       bg: 'primary',
       fontFamily: 'body',
+      outline: 'none',
+      ':hover': {
+        cursor: 'pointer',
+      },
     },
   },
 };

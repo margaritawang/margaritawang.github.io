@@ -14,6 +14,10 @@ export const navBar = [
     label: 'Skills',
     href: 'skills',
   },
+  {
+    label: 'Contact',
+    href: 'contact',
+  },
 ];
 
 export const education = [
