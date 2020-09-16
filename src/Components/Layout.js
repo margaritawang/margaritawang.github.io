@@ -1,10 +1,10 @@
 import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../theme';
-import Navbar from './Navbar';
+import Navbar from './navbar';
 import { Helmet } from 'react-helmet';
 import { animateScroll, scroller } from 'react-scroll';
-import Footer from './Footer';
+import Footer from './footer';
 
 const scrollTo = id => {
   if (id) {
